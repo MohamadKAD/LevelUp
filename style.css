@@ -199,3 +199,87 @@ footer {
   background: #1f1f1f;
   margin-top: 2rem;
 }
+
+/* payment page styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+    background: #1f242d;
+}
+
+.container{
+   max-width: 900px;
+   margin: 130px auto;
+   padding: 20px;
+   background: #fff;
+   border-radius: 10px;
+}
+
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+h3{
+  color: black;
+    margin-bottom: 15px;
+}
+
+.column {
+  flex: 1 1 400px;
+}
+
+.input-box{
+    margin-bottom: 15px;
+}
+
+.input-box span{
+    display: block;
+    margin-bottom: 3px;
+    font-weight: bold;
+    color: black;
+}
+
+.input-box input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.flex .input-box{
+    float: left;
+    margin-right: 10px;
+}
+
+.btn{
+    width: 100%;
+    padding: 15px;
+    font-size: 15px;
+    color: white;
+    background: purple;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.btn:hover{
+    transform: scale(1.01);
+    background: #6D28D9;
+}
+
+.card-logos img {
+  max-width: 121px;
+  height: auto;
+}
