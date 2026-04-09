@@ -56,10 +56,7 @@ const cleanCard = cardNumber.replace(/\s/g, "");
   setTimeout(()=>{
     const success = true;
     if(success){
-<<<<<<< HEAD
-
-=======
->>>>>>> 3d64a7cc9eaffde30646cb1207905de70970afe3
+      
       const order = {
         fullName : fullName,
         email : email,
@@ -75,7 +72,7 @@ const cleanCard = cardNumber.replace(/\s/g, "");
       orders.push(order);
       localStorage.setItem("orders", JSON.stringify(orders));
 
-<<<<<<< HEAD
+
       /* ADDED */
       let library = JSON.parse(localStorage.getItem("library")) || [];
       let selectedGame = JSON.parse(localStorage.getItem("selectedGame"));
@@ -91,8 +88,6 @@ const cleanCard = cardNumber.replace(/\s/g, "");
         localStorage.setItem("library", JSON.stringify(library));
       }
 
-=======
->>>>>>> 3d64a7cc9eaffde30646cb1207905de70970afe3
       alert("payment successful!");
       form.reset();
     }
