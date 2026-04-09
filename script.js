@@ -30,7 +30,11 @@ function renderGames(filterCategory = null, searchQuery = "") {
     card.innerHTML = `
       <img src="${game.image}" alt="${game.title}">
       <h3>${game.title}</h3>
+<<<<<<< HEAD
       <button onclick='buyGame(${JSON.stringify(game)})'>Get Now!</button>
+=======
+      <button>Get Now!</button>
+>>>>>>> 3d64a7cc9eaffde30646cb1207905de70970afe3
     `;
     container.appendChild(card);
   });
@@ -53,6 +57,7 @@ document.querySelectorAll(".category-banner").forEach(banner => {
     renderGames(category);
   });
 });
+<<<<<<< HEAD
 
 
 
@@ -60,3 +65,5 @@ function buyGame(game) {
   localStorage.setItem("selectedGame", JSON.stringify(game));
   window.location.href = "Payment.html";
 }
+=======
+>>>>>>> 3d64a7cc9eaffde30646cb1207905de70970afe3

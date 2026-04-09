@@ -200,6 +200,10 @@ footer {
   margin-top: 2rem;
 }
 
+<<<<<<< HEAD
+=======
+/* payment page styling */
+>>>>>>> 3d64a7cc9eaffde30646cb1207905de70970afe3
 * {
   margin: 0;
   padding: 0;
@@ -281,6 +285,7 @@ h3{
 .card-logos img {
   max-width: 121px;
   height: auto;
+<<<<<<< HEAD
 }
 
 
@@ -362,4 +367,6 @@ select {
 
 .profile-info button {
   margin-top: 10px;
+=======
+>>>>>>> 3d64a7cc9eaffde30646cb1207905de70970afe3
 }
