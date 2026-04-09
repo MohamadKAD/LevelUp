@@ -30,7 +30,8 @@ function renderGames(filterCategory = null, searchQuery = "") {
     card.innerHTML = `
       <img src="${game.image}" alt="${game.title}">
       <h3>${game.title}</h3>
-      <button onclick='buyGame(${JSON.stringify(game)})'>Get Now!</button>`;
+      <button onclick='buyGame(${JSON.stringify(game)})'>Get Now!</button>
+    `;
     container.appendChild(card);
   });
 }

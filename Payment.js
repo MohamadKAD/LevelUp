@@ -1,4 +1,3 @@
-/*
 const form = document.getElementById("paymentForm");
 
 form.addEventListener("submit", function(event){
@@ -57,7 +56,6 @@ const cleanCard = cardNumber.replace(/\s/g, "");
   setTimeout(()=>{
     const success = true;
     if(success){
-      
       const order = {
         fullName : fullName,
         email : email,
@@ -72,7 +70,8 @@ const cleanCard = cardNumber.replace(/\s/g, "");
       let orders = JSON.parse(localStorage.getItem("orders")) || [];
       orders.push(order);
       localStorage.setItem("orders", JSON.stringify(orders));
-      
+
+      /* ADDED */
       let library = JSON.parse(localStorage.getItem("library")) || [];
       let selectedGame = JSON.parse(localStorage.getItem("selectedGame"));
 
@@ -91,4 +90,4 @@ const cleanCard = cardNumber.replace(/\s/g, "");
       form.reset();
     }
   }, 1500);
-}); */
+});

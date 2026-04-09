@@ -199,3 +199,157 @@ footer {
   background: #1f1f1f;
   margin-top: 2rem;
 }
+
+
+.container{
+   max-width: 900px;
+   margin: 130px auto;
+   padding: 20px;
+   background: #fff;
+   border-radius: 10px;
+}
+
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+h3{
+  color: black;
+    margin-bottom: 15px;
+}
+
+.column {
+  flex: 1 1 400px;
+}
+
+.input-box{
+    margin-bottom: 15px;
+}
+
+.input-box span{
+    display: block;
+    margin-bottom: 3px;
+    font-weight: bold;
+    color: black;
+}
+
+.input-box input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.flex .input-box{
+    float: left;
+    margin-right: 10px;
+}
+
+.btn{
+    width: 100%;
+    padding: 15px;
+    font-size: 15px;
+    color: white;
+    background: purple;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.btn:hover{
+    transform: scale(1.01);
+    background: #6D28D9;
+}
+
+.card-logos img {
+  max-width: 121px;
+  height: auto;
+}
+
+
+.header {
+  text-align: center;
+  padding: 2rem;
+}
+
+.top-controls {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+#searchBar {
+  padding: 0.6rem;
+  width: 250px;
+  border-radius: 5px;
+  border: none;
+}
+
+select {
+  padding: 0.6rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.favorite-filter {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.library-container {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.profile-page {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem;
+  flex-wrap: wrap;
+}
+
+.profile-left,
+.profile-right {
+  background: #2f3542;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+.avatar {
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.profile-info input,
+.profile-info textarea {
+  padding: 0.6rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.profile-info button {
+  margin-top: 10px;
+}
