@@ -30,7 +30,7 @@ function renderGames(filterCategory = null, searchQuery = "") {
     card.innerHTML = `
       <img src="${game.image}" alt="${game.title}">
       <h3>${game.title}</h3>
-      <button>Get Now!</button>
+      <button onclick='buyGame(${JSON.stringify(game)})'>Get Now!</button>
     `;
     container.appendChild(card);
   });
@@ -53,3 +53,10 @@ document.querySelectorAll(".category-banner").forEach(banner => {
     renderGames(category);
   });
 });
+
+
+
+function buyGame(game) {
+  localStorage.setItem("selectedGame", JSON.stringify(game));
+  window.location.href = "Payment.html";
+}

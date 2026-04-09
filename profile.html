@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">LevelUp</div>
+
+  <nav>
+    <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="library.html">Library</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="settings.html">Settings</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="profile-page">
+
+  <div class="profile-left">
+    <div class="profile-card">
+      <img id="avatar" class="avatar">
+      <input type="file" id="uploadAvatar">
+    </div>
+  </div>
+
+  <div class="profile-right">
+    <div class="profile-info">
+      <h2>Profile Settings</h2>
+
+      <label>Username</label>
+      <input type="text" id="usernameInput">
+
+      <label>Email</label>
+      <input type="email" id="emailInput">
+
+      <label>About Me</label>
+      <textarea id="aboutInput"></textarea>
+
+      <p id="gamesCount"></p>
+
+      <button onclick="saveProfile()">Save Changes</button>
+    </div>
+  </div>
+
+</section>
+
+<script src="profile.js"></script>
+
+</body>
+</html>

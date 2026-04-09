@@ -71,6 +71,21 @@ const cleanCard = cardNumber.replace(/\s/g, "");
       orders.push(order);
       localStorage.setItem("orders", JSON.stringify(orders));
 
+      /* ADDED */
+      let library = JSON.parse(localStorage.getItem("library")) || [];
+      let selectedGame = JSON.parse(localStorage.getItem("selectedGame"));
+
+      if(selectedGame){
+        selectedGame.favorite = false;
+
+        const exists = library.some(g => g.title === selectedGame.title);
+        if(!exists){
+          library.push(selectedGame);
+        }
+
+        localStorage.setItem("library", JSON.stringify(library));
+      }
+
       alert("payment successful!");
       form.reset();
     }

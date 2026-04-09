@@ -200,17 +200,6 @@ footer {
   margin-top: 2rem;
 }
 
-/* payment page styling */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
-body{
-    background: #1f242d;
-}
 
 .container{
    max-width: 900px;
@@ -282,4 +271,85 @@ h3{
 .card-logos img {
   max-width: 121px;
   height: auto;
+}
+
+
+.header {
+  text-align: center;
+  padding: 2rem;
+}
+
+.top-controls {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+#searchBar {
+  padding: 0.6rem;
+  width: 250px;
+  border-radius: 5px;
+  border: none;
+}
+
+select {
+  padding: 0.6rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.favorite-filter {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.library-container {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.profile-page {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem;
+  flex-wrap: wrap;
+}
+
+.profile-left,
+.profile-right {
+  background: #2f3542;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+.avatar {
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.profile-info input,
+.profile-info textarea {
+  padding: 0.6rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.profile-info button {
+  margin-top: 10px;
 }
