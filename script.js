@@ -57,7 +57,6 @@ document.querySelectorAll(".category-banner").forEach(banner => {
     renderGames(category);
   });
 });
-<<<<<<< HEAD
 
 
 
@@ -65,5 +64,3 @@ function buyGame(game) {
   localStorage.setItem("selectedGame", JSON.stringify(game));
   window.location.href = "Payment.html";
 }
-=======
->>>>>>> 3d64a7cc9eaffde30646cb1207905de70970afe3
