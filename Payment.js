@@ -22,7 +22,7 @@ form.addEventListener("submit", function(event){
 
 const validMonths = [
   "January", "February", "March", "April", "May", "June", 
-  "July", "August", "September", "October", "November", "December"
+  "July", "August", "September", "October", "November", "December","january","february","march","april","may","june","july","august","september","october","novemeber","december"
 ];
 
 if (!validMonths.includes(expMonth)) {
