@@ -353,3 +353,18 @@ select {
 .profile-info button {
   margin-top: 10px;
 }
+
+/* Profile button css styling */
+.profileBtn{
+  padding: 15px 20px;
+  font-weight: bolder;
+  border-radius: 10px;
+  background-color: #ff4757;;
+  cursor: pointer;
+  transition: 0.1s;
+  border: none;
+}
+
+.profileBtn:hover{
+  transform: scale(1.01);
+}
