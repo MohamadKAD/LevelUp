@@ -617,6 +617,12 @@ body.redeem-page .main-redeem-keys {
   margin-top: 20px;
 }
 
+.whishlist-footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
 .brdr {
   color: #1f1f1f;
   margin-top: 20px;
@@ -807,10 +813,6 @@ footer span {
 .light-mode .brdr{
   border-bottom: 1px solid black;
   color: #fff;
-}
-
-.light-mode .card-keys:hover{
-  
 }
 
 .light-mode .card-keys{
