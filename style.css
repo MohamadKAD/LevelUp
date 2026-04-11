@@ -722,6 +722,11 @@ footer span {
   border: 1px solid #ccc;
 }
 
+.light-mode .footer-links a,
+.light-mode .footer-links li {
+  color: #121212; 
+}
+
 /*Password strength*/
 .strength-container {
   margin-top: 8px;
