@@ -137,3 +137,19 @@ emailNotif.addEventListener("change", () => {
 offersNotif.addEventListener("change", () => {
   localStorage.setItem("offersNotif", offersNotif.checked);
 });
+
+let publicProfile = document.getElementById("publicProfile");
+let language = document.getElementById("language");
+
+window.addEventListener("load", () => {
+  publicProfile.checked = localStorage.getItem("publicProfile") === "true";
+});
+publicProfile.addEventListener("change", () => {
+  localStorage.setItem("publicProfile", publicProfile.checked);
+});
+window.addEventListener("load", () => {
+  language.value = localStorage.getItem("language") || "en";
+});
+language.addEventListener("change", () => {
+  localStorage.setItem("language", language.value);
+});
