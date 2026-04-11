@@ -6,8 +6,12 @@ const form = document.getElementById("paymentForm");
 form.addEventListener("submit", function (event) {
   event.preventDefault();
 
-  if (isNaN(amount) || amount <= 0) {
-    alert("Invalid purchase amount.");
+  const selectedGame = JSON.parse(localStorage.getItem("selectedGame"));
+  const isKeysPurchase = Number.isInteger(amount) && amount > 0;
+  const isGamePurchase = !isKeysPurchase && !!selectedGame;
+
+  if (!isKeysPurchase && !isGamePurchase) {
+    alert("Invalid purchase details.");
     return;
   }
 
@@ -74,9 +78,7 @@ form.addEventListener("submit", function (event) {
 
   const cleanCard = cardNumber.replace(/\s/g, "");
   if (cleanCard.length !== 16 || isNaN(cleanCard)) {
-    alert(
-      "Invalid card number, must be 16 digits.",
-    );
+    alert("Invalid card number, must be 16 digits.");
     return;
   }
 
@@ -115,27 +117,26 @@ form.addEventListener("submit", function (event) {
       orders.push(order);
       localStorage.setItem("orders", JSON.stringify(orders));
 
-      /* ADDED */
-      let library = JSON.parse(localStorage.getItem("library")) || [];
-      let selectedGame = JSON.parse(localStorage.getItem("selectedGame"));
-
-      if (selectedGame) {
-        selectedGame.favorite = false;
-
+      if (isGamePurchase) {
+        let library = JSON.parse(localStorage.getItem("library")) || [];
         const exists = library.some((g) => g.title === selectedGame.title);
         if (!exists) {
-          library.push(selectedGame);
+          library.push({ ...selectedGame, favorite: false });
+          localStorage.setItem("library", JSON.stringify(library));
         }
-
-        localStorage.setItem("library", JSON.stringify(library));
+        localStorage.removeItem("selectedGame");
       }
 
-      const keys = generateKeysWithGames(amount);
-      localStorage.setItem("validKeys", JSON.stringify(keys));
+      if (isKeysPurchase) {
+        const keys = generateKeysWithGames(amount);
+        localStorage.setItem("validKeys", JSON.stringify(keys));
+      }
 
       alert("payment successful!");
       form.reset();
-      window.location.href = "RedeemKeys.html";
+      window.location.href = isKeysPurchase
+        ? "RedeemKeys.html"
+        : "library.html";
     }
   }, 1500);
 });

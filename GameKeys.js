@@ -177,10 +177,16 @@ function generateUniqueKey() {
 
 function generateKeysWithGames(amount) {
   const result = [];
+  let availableGames = [...games];
 
   for (let i = 0; i < amount; i++) {
-    const randomIndex = Math.floor(Math.random() * games.length);
-    const randomGame = games[randomIndex];
+    // If requested keys exceed catalog size, start a new cycle.
+    if (availableGames.length === 0) {
+      availableGames = [...games];
+    }
+
+    const randomIndex = Math.floor(Math.random() * availableGames.length);
+    const randomGame = availableGames.splice(randomIndex, 1)[0];
 
     const key = generateUniqueKey();
 
