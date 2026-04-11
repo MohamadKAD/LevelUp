@@ -71,3 +71,31 @@ function buyGame(game) {
   localStorage.setItem("selectedGame", JSON.stringify(game));
   window.location.href = "Payment.html";
 }
+
+
+document.querySelector("#browse-btn").addEventListener("click", ()=>{
+  document.querySelector(".trending").scrollIntoView({behavior: "smooth"});
+});
+
+let suggestionsSearch = document.querySelector(".suggestions");
+searchInput.addEventListener("input", () =>{
+  let find = searchInput.value.toLowerCase();
+  suggestionsSearch.innerHTML = "";
+
+  if(find === "") return;
+
+  let matches = games.filter(game =>
+    game.title.toLowerCase().includes(find));
+  matches.slice(0, 5).forEach(game => {
+    let div = document.createElement("div");
+    div.textContent = game.title;
+
+    div.addEventListener("click", () => {
+      searchInput.value = game.title;
+      suggestionsSearch.innerHTML = "";
+      renderGames(null, game.title);
+    });
+
+    suggestionsSearch.appendChild(div);
+  });
+});
