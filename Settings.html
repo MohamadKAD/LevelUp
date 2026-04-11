@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <div class="logo">LevelUp</div>
+
+    <div class="search-bar">
+      <input type="text" placeholder="Search games...">
+      <button>Search</button>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="library.html">Library</a></li>
+        <li><a href="buyKeys.html">BuyKeys</a></li>
+        <li><a href="RedeemKeys.html">Redeem</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="settings">
+    <h1>Settings</h1>
+    <div class="settings-box">
+        <h2>Account Settings</h2>
+
+        <label>Username</label>
+        <input type="text" id="username">
+
+        <label>Email</label>
+        <input type="email" id="email">
+
+        <label>Password</label>
+        <input type="password" id="password">
+
+        <button id="saveAccount">Save Changes</button>
+    </div>
+
+    <div class="settings-box">
+        <h2>Appearance</h2>
+        <label>
+            <input type="checkbox" id="themeToggle">
+            Dark Mode
+        </label>
+    </div>
+
+  </section>
+
+  <script src="settings.js"></script>
+  <script src="theme.js"></script>
+</body>
+</html>

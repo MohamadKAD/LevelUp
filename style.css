@@ -578,3 +578,100 @@ span{
 .end{
   margin-top: 5px;
 }
+
+/*Settings Page*/
+.settings {
+  padding: 2rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+.settings-box {
+  background: #2f3542;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.settings-box input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.settings-box button {
+  padding: 10px;
+  background: #ff4757;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.settings-box {
+  color: #f5f5f5;
+}
+
+.settings h1,
+.settings-box h2 {
+  color: #ff4757;
+}
+
+/*Dark/Light Mode*/
+.light-mode {
+  background-color: #f5f5f5;
+  color: #121212;
+}
+
+.light-mode header {
+  background: #ffffff;
+}
+
+.light-mode .game-card {
+  background: #ffffff;
+  color: #000;
+}
+
+.light-mode .category-banner {
+  background: #e0e0e0;
+}
+
+.light-mode .logo {
+  color: black;
+}
+
+.light-mode nav a {
+  color: black;
+}
+
+.light-mode .game-card {
+  background: #ffffff;
+  color: #000;
+}
+
+.light-mode .game-card h3 {
+  color: #000;
+}
+
+.light-mode .search-bar input {
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #000;
+}
+
+.search-bar input {
+  border: 1px solid #555;
+}
+
+footer {
+  color: #f5f5f5;
+}
+
+footer a {
+  color: #f5f5f5;
+}
+
+.light-mode {
+  color: #000;
+}
