@@ -452,7 +452,6 @@ select {
 }
 
 .redeemkeysfooter{
-   position: absolute;
   bottom: 0;
   width: 100%;
 }
@@ -497,4 +496,25 @@ select {
 .btn-redeem:hover{
   transform: scale(1.05);
   transition: transform 0.3s, background 0.3s;
+}
+
+.keys-heading {
+  color: #f5f5f5;
+  margin-top: 28px;
+  margin-bottom: 12px;
+}
+
+#keysContainer {
+  width: min(700px, 90%);
+  margin: 0 auto;
+}
+
+.key-row {
+  background: #1f1f1f;
+  border: 1px solid #2f3542;
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin-bottom: 8px;
+  text-align: left;
+  color: #f5f5f5;
 }
