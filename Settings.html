@@ -29,7 +29,8 @@
 
   <section class="settings">
     <h1>Settings</h1>
-    <div class="settings-box">
+    <div id="settings-container">
+      <div class="settings-box">
         <h2>Account Settings</h2>
 
         <label>Username</label>
@@ -40,16 +41,62 @@
 
         <label>Password</label>
         <input type="password" id="password">
+          <div class="strength-container">
+            <div id="strengthBar">
+              <div id="strengthBarFill"></div>
+            </div>
+            <small id="strengthText"></small>
+          </div>
+
+          <div class="password-rules">
+            <p id="ruleLength">At least 8 characters</p>
+            <p id="ruleNumber">Contains a number</p>
+          </div>
+
+        <small id="passwordError"></small>
 
         <button id="saveAccount">Save Changes</button>
+        <small id="saveMessage"></small>
+      </div>
+
+      <div class="settings-box">
+          <h2>Appearance</h2>
+          <label>
+              <input type="checkbox" id="themeToggle">
+              Dark Mode
+          </label>
+      </div>
     </div>
 
     <div class="settings-box">
-        <h2>Appearance</h2>
-        <label>
-            <input type="checkbox" id="themeToggle">
-            Dark Mode
-        </label>
+      <h2>Notifications</h2>
+
+      <label>
+        <input type="checkbox" id="emailNotif">
+        Email Notifications
+      </label>
+
+      <label>
+        <input type="checkbox" id="offersNotif">
+        Offers & Sales Alerts
+      </label>
+    </div>
+
+    <div class="settings-box">
+      <h2>Privacy</h2>
+
+      <label>
+        <input type="checkbox" id="publicProfile">
+        Show profile publicly
+      </label>
+    </div>
+    
+    <div class="settings-box">
+      <h2>Language</h2>
+
+      <select id="language">
+        <option value="en">English</option>
+      </select>
     </div>
 
   </section>
