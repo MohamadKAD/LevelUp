@@ -66,6 +66,11 @@ header {
 .logo {
   justify-self: start;
 }
+
+#searchBar{
+  text-align: center;
+}
+
 .search-bar {
   position: relative;
   justify-self: center;
@@ -612,7 +617,8 @@ body.redeem-page .main-redeem-keys {
   margin-top: 20px;
 }
 
-#brdr {
+.brdr {
+  color: #1f1f1f;
   margin-top: 20px;
   border-bottom: 1px solid white;
   width: 480px;
@@ -796,4 +802,28 @@ footer span {
 
 .password-rules .valid {
   color: green;
+}
+
+.light-mode .brdr{
+  border-bottom: 1px solid black;
+  color: #fff;
+}
+
+.light-mode .card-keys:hover{
+  
+}
+
+.light-mode .card-keys{
+  background: #e0e0e0;
+}
+
+.light-mode .keys-header{
+  background-color: black;
+  color: white;
+}
+
+.light-mode .profileSettings{
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  background-color: #fbfbfb;
 }
