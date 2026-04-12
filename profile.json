@@ -1,7 +1,8 @@
 {
   "username": "Player",
-  "email": "",
+  "displayName": "Player",
   "avatar": "",
+  "background": "",
   "about": "",
   "gamesOwned": 0
 }

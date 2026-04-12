@@ -31,8 +31,8 @@
     <input type="text" id="searchBar" placeholder="Search your games...">
 
     <select id="sortSelect">
-      <option value="az">A → Z</option>
-      <option value="za">Z → A</option>
+      <option value="az">A to Z</option>
+      <option value="za">Z to A</option>
     </select>
 
     <label class="favorite-filter">
@@ -42,10 +42,26 @@
   </div>
 </section>
 
-<section class="library-container" id="libraryContainer"></section>
+<main class="library-layout">
+  <section class="library-sidebar">
+    <div class="library-list-header">
+      <h2>Owned Games</h2>
+      <p id="libraryCount"></p>
+    </div>
+    <section class="library-container" id="libraryContainer"></section>
+  </section>
+
+  <aside class="library-details" id="libraryDetails">
+    <div class="library-details-empty">
+      <h2>Select a Game</h2>
+      <p>Choose a title from the left to view its details here.</p>
+    </div>
+  </aside>
+</main>
 
 <script src="library.js"></script>
 <script src="theme.js"></script>
 
 </body>
 </html>
+

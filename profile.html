@@ -6,53 +6,68 @@
 <title>Profile</title>
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="profile-editor-page">
 
 <header>
   <div class="logo">LevelUp</div>
-
   <nav>
     <ul>
       <li><a href="Home.html">Home</a></li>
-        <li><a href="library.html">Library</a></li>
-         <li><a href="whishList.html">Whish List</a></li>
-        <li><a href="buyKeys.html">BuyKeys</a></li>
-        <li><a href="RedeemKeys.html">Redeem</a></li>
-        <li><a href="profile.html">Profile</a></li>
-        <li><a href="settings.html">Settings</a></li>
+      <li><a href="library.html">Library</a></li>
+      <li><a href="whishList.html">Whish List</a></li>
+      <li><a href="buyKeys.html">BuyKeys</a></li>
+      <li><a href="RedeemKeys.html">Redeem</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="settings.html">Settings</a></li>
     </ul>
   </nav>
 </header>
 
-<section class="profile-page">
-
-  <div class="profile-left">
-    <div class="profile-card">
-      <img id="avatar" class="avatar">
-      <input type="file" id="uploadAvatar">
+<main class="profile-editor">
+  <section class="profile-showcase">
+    <div class="profile-banner" id="profileBanner">
+      <div class="profile-banner-overlay"></div>
+      <div class="profile-identity">
+        <img id="avatarPreview" class="profile-avatar" alt="Profile picture preview">
+        <div class="profile-copy">
+          <h1 id="displayNamePreview">Player</h1>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <div class="profile-right">
-    <div class="profile-info">
-      <h2>Profile Settings</h2>
-
-      <label>Username</label>
-      <input type="text" id="usernameInput" class="profileSettings">
-
-      <label>Email</label>
-      <input type="email" id="emailInput" class="profileSettings">
-
-      <label>About Me</label>
-      <textarea id="aboutInput" class="profileSettings"></textarea>
-
-      <p id="gamesCount"></p>
-
-      <button onclick="saveProfile()" class="profileBtn">Save Changes</button>
+    <div class="profile-about-card">
+      <h2>About Me</h2>
+      <p id="aboutPreview">Tell people a little bit about yourself.</p>
     </div>
-  </div>
+  </section>
 
-</section>
+  <section class="profile-panel">
+    <h2>Customize Profile</h2>
+
+    <div class="profile-field">
+      <label for="backgroundInput">Change Background</label>
+      <input type="file" id="backgroundInput" accept="image/*">
+    </div>
+
+    <div class="profile-field">
+      <label for="avatarInput">Change Profile Picture</label>
+      <input type="file" id="avatarInput" accept="image/*">
+    </div>
+
+    <div class="profile-field">
+      <label for="displayNameInput">Change Display Name</label>
+      <input type="text" id="displayNameInput" maxlength="30" placeholder="Enter your display name">
+    </div>
+
+    <div class="profile-field">
+      <label for="aboutInput">Change About Me</label>
+      <textarea id="aboutInput" rows="5" maxlength="180" placeholder="Write something about yourself"></textarea>
+    </div>
+
+    <button type="button" id="saveProfileBtn" class="profileBtn">Save Profile</button>
+    <p id="saveStatus" class="profile-status" aria-live="polite"></p>
+  </section>
+</main>
 
 <script src="profile.js"></script>
 <script src="theme.js"></script>
