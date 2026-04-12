@@ -3,6 +3,12 @@ const amount = parseInt(params.get("amount"), 10);
 
 const form = document.getElementById("paymentForm");
 
+function removeFromWishlist(gameTitle) {
+  const wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+  const updatedWishlist = wishlist.filter((game) => game.title !== gameTitle);
+  localStorage.setItem("wishlist", JSON.stringify(updatedWishlist));
+}
+
 form.addEventListener("submit", function (event) {
   event.preventDefault();
 
@@ -124,6 +130,7 @@ form.addEventListener("submit", function (event) {
           library.push({ ...selectedGame, favorite: false });
           localStorage.setItem("library", JSON.stringify(library));
         }
+        removeFromWishlist(selectedGame.title);
         localStorage.removeItem("selectedGame");
       }
 

@@ -25,6 +25,13 @@ document.getElementById("redeemBtn").addEventListener("click", () => {
       }
       localStorage.setItem("library", JSON.stringify(library));
 
+      // keep wishlist clean when ownership changes
+      const wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+      const updatedWishlist = wishlist.filter(
+        (game) => game.title !== redeemedGame.title,
+      );
+      localStorage.setItem("wishlist", JSON.stringify(updatedWishlist));
+
       // remove key from list (important)
       keys.splice(i, 1);
 
