@@ -15,6 +15,8 @@ const aboutInput = document.getElementById('aboutInput');
 const aboutPreview = document.getElementById('aboutPreview');
 const avatarInput = document.getElementById('avatarInput');
 const backgroundInput = document.getElementById('backgroundInput');
+const removeAvatarBtn = document.getElementById('removeAvatarBtn');
+const removeBackgroundBtn = document.getElementById('removeBackgroundBtn');
 const saveProfileBtn = document.getElementById('saveProfileBtn');
 const saveStatus = document.getElementById('saveStatus');
 
@@ -52,6 +54,12 @@ function previewImage(file, key, callback) {
   reader.readAsDataURL(file);
 }
 
+function clearImage(key, callback, input) {
+  delete profile[key];
+  input.value = '';
+  callback();
+}
+
 avatarInput.addEventListener('change', function() {
   previewImage(this.files[0], 'avatar', (image) => {
     avatarPreview.src = image;
@@ -62,6 +70,18 @@ backgroundInput.addEventListener('change', function() {
   previewImage(this.files[0], 'background', (image) => {
     profileBanner.style.backgroundImage = `url("${image}")`;
   });
+});
+
+removeAvatarBtn.addEventListener('click', function() {
+  clearImage('avatar', () => {
+    avatarPreview.src = defaultAvatar;
+  }, avatarInput);
+});
+
+removeBackgroundBtn.addEventListener('click', function() {
+  clearImage('background', () => {
+    profileBanner.style.backgroundImage = '';
+  }, backgroundInput);
 });
 
 displayNameInput.addEventListener('input', function() {

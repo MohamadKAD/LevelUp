@@ -46,12 +46,20 @@
 
     <div class="profile-field">
       <label for="backgroundInput">Change Background</label>
-      <input type="file" id="backgroundInput" accept="image/*">
+      <div class="profile-file-actions">
+        <label for="backgroundInput" class="profile-file-btn">Choose File</label>
+        <input type="file" id="backgroundInput" accept="image/*">
+        <button type="button" id="removeBackgroundBtn" class="profile-file-btn profile-remove-btn">Remove</button>
+      </div>
     </div>
 
     <div class="profile-field">
       <label for="avatarInput">Change Profile Picture</label>
-      <input type="file" id="avatarInput" accept="image/*">
+      <div class="profile-file-actions">
+        <label for="avatarInput" class="profile-file-btn">Choose File</label>
+        <input type="file" id="avatarInput" accept="image/*">
+        <button type="button" id="removeAvatarBtn" class="profile-file-btn profile-remove-btn">Remove</button>
+      </div>
     </div>
 
     <div class="profile-field">

@@ -753,8 +753,53 @@ select {
 }
 
 .profile-field input[type="file"] {
-  padding: 0.8rem;
+  display: none;
+}
+
+.profile-file-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.profile-file-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 132px;
+  padding: 0.9rem 1.1rem;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background:
+    linear-gradient(135deg, rgba(255, 71, 87, 0.22), rgba(255, 255, 255, 0.08)),
+    rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 700;
+  letter-spacing: 0.02em;
   cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.profile-file-btn:hover {
+  transform: translateY(-1px);
+  border-color: rgba(255, 71, 87, 0.45);
+  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.18);
+}
+
+.profile-file-btn:focus-visible {
+  outline: 2px solid rgba(255, 71, 87, 0.65);
+  outline-offset: 3px;
+}
+
+.profile-remove-btn {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 71, 87, 0.16)),
+    rgba(255, 255, 255, 0.04);
 }
 
 .profile-field textarea {
@@ -1241,6 +1286,26 @@ footer span {
   background: rgba(255, 255, 255, 0.88);
   color: #121212;
   border-color: rgba(0, 0, 0, 0.12);
+}
+
+.light-mode .profile-file-btn {
+  border-color: rgba(0, 0, 0, 0.12);
+  background:
+    linear-gradient(135deg, rgba(255, 71, 87, 0.18), rgba(255, 255, 255, 0.96)),
+    rgba(255, 255, 255, 0.9);
+  color: #121212;
+  box-shadow: 0 10px 22px rgba(17, 22, 31, 0.08);
+}
+
+.light-mode .profile-file-btn:hover {
+  border-color: rgba(255, 71, 87, 0.4);
+  box-shadow: 0 14px 26px rgba(17, 22, 31, 0.12);
+}
+
+.light-mode .profile-remove-btn {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(255, 71, 87, 0.14)),
+    rgba(255, 255, 255, 0.86);
 }
 
 .light-mode .library-review-input {
