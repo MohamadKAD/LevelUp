@@ -928,6 +928,7 @@ body.redeem-page .main-redeem-keys {
   border: none;
   color: #ccc;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .btn-redeem:hover {
