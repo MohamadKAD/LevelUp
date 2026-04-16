@@ -8,47 +8,103 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            LevelUp
-        </div>
+        <div class="logo">LevelUp</div>
+
+        <nav>
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="library.html">Library</a></li>
+         <li><a href="whishList.html">Whish List</a></li>
+        <li><a href="buyKeys.html">BuyKeys</a></li>
+        <li><a href="RedeemKeys.html">Redeem</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+    </nav>
+
     </header>
 
     <section class="game-details">
 
         <div class="G-media">
             <img src="" alt="Game Image">
-            <video src=""></video>
+            <iframe 
+                id="gameTrailer"
+                width="100%" 
+                height="400"
+                src=""
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <div class="game-gallery">
+            <h2>Gallery</h2>
         </div>
 
         <div class="game-info">
             <h1 id="GameTitle">Game Title</h1>
             <p id="GameDescription">Game Description</p>
             <h3 id="GamePrice">$0.00</h3>
+            <div class="purchase-options">
+                <button id="addToCart">Add to Cart</button>
+                <button id="addToWishlist">Add to Wishlist</button>
+            </div>
             <button id="but-btn">Buy Now</button>
+            <div class="game-meta">
+                <p><strong>Release Date:</strong> April 2026</p>
+                <p><strong>Developer:</strong> Studio X</p>
+                <p><strong>Publisher:</strong> LevelUp Games</p>
+                <p><strong>Genre:</strong> Action RPG</p>
+                <p><strong>Languages:</strong> English, French, Arabic</p>
+            </div>
+
             <h4>Minimum Requirments</h4>
             <ul id="GameSpecific">
-                <li>OS:</li>
-                <li>Processor</li>
-                <li>Memory:</li>
-                <li>Graphics:</li>
-                <li>Storage:</li>
+                <li><strong>OS:</strong></li>
+                <li><strong>Processor</strong></li>
+                <li><strong>Memory:</strong></li>
+                <li><strong>Graphics:</strong></li>
+                <li><strong>Storage:</strong></li>
             </ul>
+
+            <h4>Recommended Requirements</h4>
+            <ul id="GameRecommended">
+                <li><strong>OS:</strong> Windows 11</li>
+                <li><strong>Processor:</strong> Intel i7</li>
+                <li><strong>Memory:</strong> 16 GB RAM</li>
+                <li><strong>Graphics:</strong> NVIDIA RTX 3060</li>
+                <li><strong>Storage:</strong> 50 GB</li>
+            </ul>
+
         </div>
     </section>
     
     <section class="comments">
         <h2>Reviews</h2>
-        <textarea id="commentInput" placeholder="Write a comment..."></textarea>
-        <button id="postComment">Post</button>
-        <div id="commentsList"></div>
-    <div class="review">
-        <div class="review-header">
-            <span class="username">Player123</span>
-            <span class="date">April 12, 2026</span>
-            <span class="rating">★★★★☆</span>
+        <div id="ratingSummary">
+            <p>Average Rating: <span id="averageRating">0</span> ★</p>
+            <p>Total Reviews: <span id="totalReviews">0</span></p>
         </div>
-      <p class="review-text">Amazing gameplay and graphics, but the story pacing could be better.</p>
-    </div>
+        
+        <textarea id="commentInput" placeholder="Write a comment..."></textarea>
+        <select id="ratingInput">
+            <option value="5">★★★★★</option>
+            <option value="4">★★★★☆</option>
+            <option value="3">★★★☆☆</option>
+            <option value="2">★★☆☆☆</option>
+            <option value="1">★☆☆☆☆</option>
+        </select>
+        <button id="postComment">Post</button>
+        
+        <div id="commentsList"></div>
     </section>
+
+    <div id="lightbox" class="lightbox">
+        <img id="lightboxImg" src="" alt="Screenshot">
+    </div>
+
+    <script src="game.js"></script>
+
 </body>
 </html>

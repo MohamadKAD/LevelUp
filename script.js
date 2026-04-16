@@ -218,7 +218,9 @@ function renderGames(filterCategory = null, searchQuery = "") {
       .toLowerCase()
       .includes(searchQuery.toLowerCase());
     return matchesCategory && matchesSearch;
-  });
+  }
+
+);
 
   filteredGames.forEach((game) => {
     const owned = isOwnedGame(game);
@@ -243,13 +245,20 @@ function renderGames(filterCategory = null, searchQuery = "") {
       </div>
     `;
 
-    card.querySelector(".buy-now-btn").addEventListener("click", () => {
-      buyGame(game);
+    card.addEventListener("click", () => {
+      localStorage.setItem("selectedGameId", game.id);
+      window.location.href = "game.html";
     });
 
-    card.querySelector(".wishlist-btn").addEventListener("click", () => {
+    card.querySelector(".buy-now-btn").onclick = function (event) {
+      event.stopPropagation();
+      buyGame(game);
+    };
+
+    card.querySelector(".wishlist-btn").onclick = function (event) {
+      event.stopPropagation();
       addToWishlist(game);
-    });
+    };
 
     container.appendChild(card);
   });
@@ -274,8 +283,8 @@ document.querySelectorAll(".category-banner").forEach((banner) => {
 });
 
 function buyGame(game) {
-  localStorage.setItem("selectedGame", JSON.stringify(game));
-  window.location.href = "Payment.html";
+  localStorage.setItem("selectedGameId", game.id);
+  window.location.href = "game.html";
 }
 
 document.querySelector("#browse-btn").addEventListener("click", () => {
