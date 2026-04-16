@@ -88,7 +88,7 @@ const games = [
     title: "Grand Theft Auto V",
     category: "Top Rated",
     image:
-      "https://imgs.search.brave.com/5bpLkHSYowf-H3u3watyYgHmmpGEFJ7l86NRiFZFClM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvZ3JhbmQtdGhl/ZnQtYXV0by12LXBp/Y3R1cmVzLW5hZWo0/eWlhcDRnbnhoMm8u/anBn",
+      "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/12/gta-5-cover.jpg",
   },
   {
     id: 14,
