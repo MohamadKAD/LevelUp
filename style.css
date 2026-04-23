@@ -161,6 +161,11 @@ nav {
 .hero button:hover {
   background: #e84118;
 }
+
+.light-mode .hero {
+  background: linear-gradient(to right, #f0f0f0, #d9dde4);
+  color: #121212;
+}
 /*------------------------------------*/
 .categories {
   padding: 2rem;

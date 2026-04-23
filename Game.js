@@ -710,8 +710,8 @@ if (selectedGame) {
     <p><strong>Languages:</strong> ${selectedGame.languages}</p>
   `;
 
-  const min = selectedGame.requirements.minimum;
-  const rec = selectedGame.requirements.recommended;
+  let min = selectedGame.requirements.minimum;
+  let rec = selectedGame.requirements.recommended;
 
   document.getElementById("GameSpecific").innerHTML = `
     <li><strong>OS:</strong> ${min.os}</li>
@@ -730,12 +730,12 @@ if (selectedGame) {
   `;
 }
 
-const gallery = document.querySelector(".game-gallery");
+let gallery = document.querySelector(".game-gallery");
 gallery.innerHTML = "<h2>Gallery</h2>";
 
 if (selectedGame.screenshots && selectedGame.screenshots.length > 0) {
   selectedGame.screenshots.forEach(src => {
-    const img = document.createElement("img");
+    let img = document.createElement("img");
     img.src = src;
     img.alt = "Gameplay Screenshot";
 
@@ -751,3 +751,61 @@ if (selectedGame.screenshots && selectedGame.screenshots.length > 0) {
 document.getElementById("lightbox").addEventListener("click", function () {
   this.style.display = "none";
 });
+
+let buyBtn = document.getElementById("buy-btn");
+
+if (buyBtn && selectedGame) {
+  buyBtn.onclick = function () {
+    localStorage.setItem("selectedGame", JSON.stringify(selectedGame));
+    window.location.href = "Payment.html";
+  };
+}
+
+document.getElementById("addToWishlist").addEventListener("click", function () {
+  let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+
+  let exists = wishlist.some(g => g.title === selectedGame.title);
+
+  if (exists) {
+    alert("Already in wishlist");
+    return;
+  }
+
+  wishlist.push(selectedGame);
+  localStorage.setItem("wishlist", JSON.stringify(wishlist));
+
+  alert("Added to wishlist!");
+
+  this.textContent = "Wishlisted";
+  this.disabled = true;
+});
+
+function isWishlisted(game) {
+  let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+  return wishlist.some(g => g.title === game.title);
+}
+
+function isOwned(game) {
+  let library = JSON.parse(localStorage.getItem("library")) || [];
+  return library.some(g => g.title === game.title);
+}
+
+let wishlistBtn = document.getElementById("addToWishlist");
+
+buyBtn.onclick = null;
+
+if (selectedGame && isOwned(selectedGame)) {
+  buyBtn.textContent = "Play";
+
+  buyBtn.onclick = function () {
+    alert("Launching " + selectedGame.title + "...");
+  };
+
+} else {
+  buyBtn.textContent = "Buy Now";
+
+  buyBtn.onclick = function () {
+    localStorage.setItem("selectedGame", JSON.stringify(selectedGame));
+    window.location.href = "Payment.html";
+  };
+}

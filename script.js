@@ -210,14 +210,16 @@ function renderGames(filterCategory = null, searchQuery = "") {
   const container = document.querySelector(".game-grid");
   container.innerHTML = "";
 
-  const filteredGames = games.filter((game) => {
-    const matchesCategory = filterCategory
+  let filteredGames = games.filter((game) => {
+    let matchesCategory = filterCategory
       ? game.category === filterCategory
       : true;
-    const matchesSearch = game.title
+    let matchesSearch = game.title
       .toLowerCase()
       .includes(searchQuery.toLowerCase());
-    return matchesCategory && matchesSearch;
+
+    let notOwned = searchQuery ? true : !isOwnedGame(game);
+    return matchesCategory && matchesSearch && notOwned;
   }
 
 );
@@ -312,3 +314,9 @@ searchInput.addEventListener("input", () => {
     suggestionsSearch.appendChild(div);
   });
 });
+
+
+if (isOwned(selectedGame)) {
+  document.getElementById("but-btn").textContent = "Owned";
+  document.getElementById("but-btn").disabled = true;
+}
