@@ -664,17 +664,16 @@ select {
   display: flex;
   align-items: flex-end;
   padding: 32px;
-  background:
-    radial-gradient(circle at 20% 20%, rgba(255, 71, 87, 0.45), transparent 28%),
-    radial-gradient(circle at 80% 15%, rgba(70, 130, 180, 0.35), transparent 24%),
-    linear-gradient(135deg, rgba(255, 71, 87, 0.2), rgba(33, 37, 41, 0.78)),
-    linear-gradient(160deg, #11161f 0%, #202734 55%, #0d1117 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .profile-banner-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(5, 7, 10, 0.85), rgba(5, 7, 10, 0.15));
+  background: rgba(0, 0, 0, 0.25);
+  pointer-events: none;
 }
 
 .profile-identity {
@@ -698,6 +697,7 @@ select {
 .profile-copy h1 {
   font-size: clamp(2rem, 4vw, 3.5rem);
   margin-bottom: 10px;
+  color: floralwhite;
 }
 
 .profile-copy p {
