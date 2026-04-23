@@ -17,7 +17,6 @@ document.getElementById("redeemBtn").addEventListener("click", () => {
       const redeemedGame = keys[i].game;
       keys[i].used = true;
 
-      // add to library
       let library = JSON.parse(localStorage.getItem("library")) || [];
       const exists = library.some((g) => g.title === redeemedGame.title);
       if (!exists) {
@@ -25,14 +24,12 @@ document.getElementById("redeemBtn").addEventListener("click", () => {
       }
       localStorage.setItem("library", JSON.stringify(library));
 
-      // keep wishlist clean when ownership changes
       const wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
       const updatedWishlist = wishlist.filter(
         (game) => game.title !== redeemedGame.title,
       );
       localStorage.setItem("wishlist", JSON.stringify(updatedWishlist));
 
-      // remove key from list (important)
       keys.splice(i, 1);
 
       localStorage.setItem("validKeys", JSON.stringify(keys));
@@ -40,7 +37,7 @@ document.getElementById("redeemBtn").addEventListener("click", () => {
       document.getElementById("result").textContent =
         `Unlocked ${redeemedGame.title}`;
 
-      displayKeys(); // refresh UI
+      displayKeys();
       if (keyInput) keyInput.value = "";
       found = true;
       break;
@@ -70,5 +67,4 @@ function displayKeys() {
   });
 }
 
-// run when page loads
 displayKeys();
