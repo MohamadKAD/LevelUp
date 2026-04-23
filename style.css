@@ -1008,6 +1008,7 @@ body.redeem-page .main-redeem-keys {
   margin-right: 220px;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .footer-links li,
@@ -1073,6 +1074,29 @@ footer span {
 
 .end {
   margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .home-footer {
+    margin-right: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .about {
+    width: 100%;
+    max-width: 560px;
+  }
+
+  .socials {
+    margin-left: 0;
+  }
+
+  .brdr {
+    width: min(90%, 480px);
+  }
 }
 /*------------------------------------*/
 /*Settings Page*/
