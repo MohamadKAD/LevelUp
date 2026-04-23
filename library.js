@@ -30,19 +30,11 @@ function getGameDescription(game) {
 }
 
 function normalizeSelection(filteredGames) {
-  if (filteredGames.length === 0) {
-    selectedGameTitle = null;
-    return null;
-  }
+  if (filteredGames.length === 0) return null;
 
-  const matchingGame = filteredGames.find((game) => game.title === selectedGameTitle);
-
-  if (matchingGame) {
-    return matchingGame;
-  }
-
-  selectedGameTitle = filteredGames[0].title;
-  return filteredGames[0];
+  return filteredGames.find(
+    (game) => game.title === selectedGameTitle
+  ) || null;
 }
 
 function renderDetails(game) {
@@ -108,7 +100,12 @@ function renderGames() {
   container.innerHTML = "";
   libraryCount.textContent = `${filtered.length} game${filtered.length === 1 ? "" : "s"}`;
 
-  const selectedGame = normalizeSelection(filtered);
+  let selectedGame = normalizeSelection(filtered);
+
+  if (!selectedGame && filtered.length > 0) {
+    selectedGame = filtered[0];
+    selectedGameTitle = selectedGame.title;
+  }
 
   if (filtered.length === 0) {
     container.innerHTML = `
@@ -135,8 +132,8 @@ function renderGames() {
     `;
 
     item.addEventListener("click", () => {
-      selectedGameTitle = game.title;
-      renderGames();
+      localStorage.setItem("selectedGameId", game.id);
+      window.location.href = "game.html";
     });
 
     container.appendChild(item);
@@ -177,4 +174,3 @@ sortSelect.addEventListener("change", renderGames);
 favoriteOnly.addEventListener("change", renderGames);
 
 renderGames();
-

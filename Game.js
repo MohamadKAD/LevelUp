@@ -9,6 +9,7 @@ const games = [
   screenshots: ["https://tse1.mm.bing.net/th/id/OIP.Km91qAk7eTyg_U9u6BUa9QHaEI?rs=1&pid=ImgDetMain&o=7&rm=3","https://tse4.mm.bing.net/th/id/OIP.ZMv0kNNC7pamMOL0BM4cgwHaEo?rs=1&pid=ImgDetMain&o=7&rm=3", "https://tse2.mm.bing.net/th/id/OIP.NoDYrqDgCeL8d7ImOS5w6wHaEK?rs=1&pid=ImgDetMain&o=7&rm=3", "https://th.bing.com/th/id/OIP.g4QfzirPC1U3JGiVTC0s0AHaEK?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3", "https://th.bing.com/th/id/OIP.KDDroQtesWSDC2ukVLqhbgHaEK?w=271&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"],
   description: "An open-world action RPG set in the Lands Between.",
   price: "$59.99",
+  discount: 50,
   releaseDate: "February 25, 2022",
   developer: "FromSoftware",
   publisher: "Bandai Namco",
@@ -42,6 +43,7 @@ const games = [
   screenshots: ["https://tecnogaming.com/wp-content/uploads/2018/08/Red-Dead-Redemption-2-Official-Gameplay-Video.jpg", "https://th.bing.com/th/id/R.73f0a65b232428b1aaab04c5876f6eeb?rik=vYcHYglYLy36cA&pid=ImgRaw&r=0", "https://fextralife.com/wp-content/uploads/2018/08/03_RDR2-2048x1152.jpg", "https://i.pinimg.com/originals/b3/97/87/b397871f751c7d430ac7a31db34a1870.jpg", "https://www.pcgamesn.com/wp-content/uploads/2018/08/red-dead-redemption-2-campfire.jpg"],
   description: "A cinematic open-world western adventure.",
   price: "$59.99",
+  discount: 0,
   releaseDate: "October 26, 2018",
   developer: "Rockstar Games",
   publisher: "Rockstar Games",
@@ -75,6 +77,7 @@ const games = [
   screenshots: ["https://flowgames.gg/wp-content/uploads/2025/09/Call-of-Duty-Black-Ops-7-Multiplayer-Gameplay-Reveal-Trailer-00-01-09.jpg", "https://insider-gaming.com/wp-content/uploads/2025/09/BlackOps7MP-1.jpg", "https://www.hd-tecnologia.com/imagenes/articulos/2025/09/Call-of-Duty-Black-Ops-7-muestra-su-gameplay-multijugador-en-un-nuevo-trailer-1.jpg", "https://th.bing.com/th/id/OIP.j9ObPMat0wa9OkBoEdpdIwHaEK?w=283&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3", "https://static.beebom.com/wp-content/uploads/2025/09/Black-Ops-7-Zombies-Fighting-the-Zursa.jpg?quality=75&strip=all"],
   description: "A fast-paced FPS with campaign, multiplayer, and zombies.",
   price: "$69.99",
+  discount: 30,
   releaseDate: "2025",
   developer: "Activision",
   publisher: "Activision",
@@ -108,6 +111,7 @@ const games = [
   screenshots: ["https://tse4.mm.bing.net/th/id/OIP.sPPuu60QqU0_ea2H5p4VeQHaEK?rs=1&pid=ImgDetMain&o=7&rm=3", "https://refifa.com/wp-content/uploads/2025/09/FC-Mobile-26-Gameplay-Deep-Dive.webp", "https://img.xboxachievements.com/images/monthly_2025_07/screenshots/13237/med_fc26_musiala_gameplay_hires_wm_16x9_d5b6d01f-2e39-4cb5-8dea-a9dc5d566184.jpg", "https://static.deltiasgaming.com/2025/07/EA-FC-26-Reveal-Trailer-Highlights.jpg", "https://www.operationsports.com/wp-content/uploads/2025/10/All-EA-FC-26-Pre-Season-Rewards-And-How-To-Claim-Them.jpg?fit=1200%2C675"],
   description: "Football simulation with realistic gameplay and teams.",
   price: "$69.99",
+  discount: 0,
   releaseDate: "2025",
   developer: "EA Sports",
   publisher: "EA",
@@ -141,6 +145,7 @@ const games = [
   screenshots: ["https://www.gematsu.com/wp-content/uploads/2024/11/ARC-Raiders-Gameplay_11-12-24.jpg", "https://game.dazepuzzle.com/wp-content/uploads/ARC-Raiders-gameplay-screenshot-PS5-4.webp", "https://mp1st.com/wp-content/uploads/2024/11/ARC-Raiders.jpg.webp", "https://boosting-ground.com/uploads/images/guide/arc-raiders-getting-started-guide-gameplay.jpg", "https://i.gadgets360cdn.com/large/arc_raiders_4_1761312343960.png"],
   description: "Co-op shooter fighting robotic enemies.",
   price: "$39.99",
+  discount: 0,
   releaseDate: "2024",
   developer: "Embark Studios",
   publisher: "Embark Studios",
@@ -174,6 +179,7 @@ const games = [
   screenshots: ["https://minecraft.wiki/images/thumb/Survival.png/854px-Survival.png?b8898", "https://i.pinimg.com/originals/76/15/1a/76151af8aa2da57c33c9c5874207199b.jpg", "https://uploads-ssl.webflow.com/63cd496ff1e5b4371aaa2e28/63cd67743f5ddf9354936e22_ruby-castle-01.jpg", "https://tse2.mm.bing.net/th/id/OIP.yjBkyG6Hyepoy-x2x_GCIgHaEK?rs=1&pid=ImgDetMain&o=7&rm=3", "https://staticg.sportskeeda.com/editor/2024/09/7cb67-17271325691039-1920.jpg"],
   description: "Sandbox game for building and survival.",
   price: "$29.99",
+  discount: 0,
   releaseDate: "2011",
   developer: "Mojang",
   publisher: "Microsoft",
@@ -207,6 +213,7 @@ const games = [
   screenshots: ["https://i.ytimg.com/vi/EJCX-RMtNt0/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLDSNV7JB5aLDx-FqrQrY3_RSyy4_w", "https://www.gamebyte.com/wp-content/uploads/2021/12/d2e6e87c-gran-turismo-7-deep-forest.jpg", "https://www.gran-turismo.com/images/c/i1NV9IVoZx3lNEE.jpg", "https://i.ytimg.com/vi/GAz94TtFWAQ/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGEogZSgjMA8=&rs=AOn4CLDZCoCHgaRXo2aWuduG-8xs-7QusA", "https://th.bing.com/th/id/R.6fdb459b0d233b4ac4ae27d141c99878?rik=CWzxTiMxTtcHmg&pid=ImgRaw&r=0"],
   description: "Realistic racing simulator.",
   price: "$49.99",
+  discount: 70,
   releaseDate: "2022",
   developer: "Polyphony Digital",
   publisher: "Sony",
@@ -273,6 +280,7 @@ const games = [
   screenshots: ["https://www.pcinvasion.com/wp-content/uploads/2023/08/cyberpunk-2077-gameplay-phantom-liberty-trailer-abilties-cyberware-mods.jpg", "https://sm.ign.com/ign_jp/gallery/u/updated-92/updated-92-cyberpunk-2077-gameplay-details_tj4a.jpg", "https://thecinemaholic.com/wp-content/uploads/2019/09/2019-09-15-image-2.jpg", "https://www.techpowerup.com/img/YwSfZOJ0dtljHGIf.jpg", "https://cdn.mos.cms.futurecdn.net/wU73Dq8qJ8Jqrza2eHDgo6-1200-80.jpg"],
   description: "Futuristic open-world RPG.",
   price: "$49.99",
+  discount: 25,
   releaseDate: "2020",
   developer: "CD Projekt Red",
   publisher: "CD Projekt",
@@ -306,6 +314,7 @@ const games = [
   screenshots: ["https://th.bing.com/th/id/R.c980a568faa98680a25d96d8cb5d5b24?rik=vdZhy%2bhWM9ch5A&pid=ImgRaw&r=0", "https://cdn.wccftech.com/wp-content/uploads/2015/04/Witcher-3-14-1030x579.jpg", "https://th.bing.com/th/id/R.d06e5781db13a791eb2d533e16b629bf?rik=zKDMnDXXAs6%2brg&riu=http%3a%2f%2fcdn.wccftech.com%2fwp-content%2fuploads%2f2015%2f05%2fWitcher3-11.jpg&ehk=uCW8C6FCuNBLcBwODtyhTJIaUy%2fg5XrKgb4y%2biOMxA4%3d&risl=&pid=ImgRaw&r=0", "https://th.bing.com/th/id/R.c5017c6d4cb4086ad170b936ec7c1cf9?rik=0JHyhiT166f5lw&riu=http%3a%2f%2fimages.gamersyde.com%2fimage_the_witcher_3_wild_hunt-27433-2651_0008.jpg&ehk=z7b%2brbewro7YYzWLAAFItqeB%2f2EW707eQXrLTeq9%2fNs%3d&risl=&pid=ImgRaw&r=0", "https://tse2.mm.bing.net/th/id/OIP.MNY0mr6PuMcNI26Sf3_XygHaEK?rs=1&pid=ImgDetMain&o=7&rm=3"],
   description: "Story-driven fantasy RPG.",
   price: "$39.99",
+  discount: 0,
   releaseDate: "2015",
   developer: "CD Projekt Red",
   publisher: "CD Projekt",
@@ -338,6 +347,7 @@ const games = [
   screenshots: ["https://www.theloadout.com/wp-content/sites/theloadout/2023/06/assassins-creed-mirage-gameplay-new-features-parry-kill-550x309.jpg", "https://images.gamersyde.com/image_stream-44937-5058_0002.jpg", "https://64.media.tumblr.com/0e7b4c936bd545437e96fb37a9293818/42e121e5855e37de-11/s2048x3072/4a2a3ddb695801e767483bc17af0100bf7931328.jpg", "https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/05/assassin-s-creed-mirage-gameplay-trailer-basim-assassinating-enemy.jpg", "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/08/assassins-creed-mirage-gameplay-trailer-screenshot-basim-avoiding-arrow-pre-jump.jpg"],
   description: "A stealth-focused Assassin’s Creed experience set in Baghdad.",
   price: "$49.99",
+  discount: 0,
   releaseDate: "October 5, 2023",
   developer: "Ubisoft Bordeaux",
   publisher: "Ubisoft",
@@ -371,6 +381,7 @@ const games = [
   screenshots: ["https://news-cdn.softpedia.com/images/news2/death-stranding-comprehensive-gameplay-footage-reveals-everything-about-the-game-527402-2.jpg", "https://static0.thegamerimages.com/wordpress/wp-content/uploads/2019/09/death-stranding-gameplay-explained.original-e1568339531439.jpg", "https://images.cgames.de/images/gamestar/287/death-stranding-gameplay-trailer_6067644.jpg", "https://th.bing.com/th/id/R.da0479450a5b00bc8775de28a794b2f7?rik=OfHuTSpEtdgwrw&riu=http%3a%2f%2fwww.ungeek.ph%2fwp-content%2fuploads%2f2018%2f06%2fe3_2018_death_stranding_makes_sense_image_2.jpg&ehk=GArJZY5rZ2K6oDuPtrCaWxcrzP%2bWZbO49%2bmVbnjSYgM%3d&risl=&pid=ImgRaw&r=0", "https://i.pinimg.com/originals/cf/34/de/cf34de512d116b74413459aaec56feeb.jpg"],
   description: "A cinematic open-world delivery adventure sequel.",
   price: "$69.99",
+  discount: 0,
   releaseDate: "2025",
   developer: "Kojima Productions",
   publisher: "Sony Interactive Entertainment",
@@ -404,6 +415,7 @@ const games = [
   screenshots: ["https://tse2.mm.bing.net/th/id/OIP.wFSFEs4othlTvrOp4_4oWwHaEK?rs=1&pid=ImgDetMain&o=7&rm=3", "https://s2.dmcdn.net/v/U_tj31aWj5eOclsji/x1080", "https://tse1.mm.bing.net/th/id/OIP.565GkJYNWnQFrqnDEMof9wHaEK?rs=1&pid=ImgDetMain&o=7&rm=3", "https://th.bing.com/th/id/OIP.CXYq3gTuCJVlDAwn4LD6ZgHaEK?w=271&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3", "https://img.gta5-mods.com/q95/images/past-gen-map-and-hud-3d-models-converted/18e81b-GTA5%202018-08-14%2016-31-59-460.jpg"],
   description: "A massive open-world crime game with multiple protagonists.",
   price: "$29.99",
+  discount: 0,
   releaseDate: "September 17, 2013",
   developer: "Rockstar North",
   publisher: "Rockstar Games",
@@ -437,6 +449,7 @@ const games = [
   screenshots: ["https://flowgames.gg/wp-content/uploads/2025/07/Crimson-Desert_SGF-2025_Screenshot.jpg", "https://static.deltiasgaming.com/2025/10/Crimson_Desert-1.jpg", "https://www.gematsu.com/wp-content/uploads/2024/12/Crimson-Desert_2024_12-12-24_009-1920x1150.jpg", "https://media.altchar.com/prod/images/gm_featured_image/805d24d4448a-ss653759c43cbc7900686a917d4b165f33b8cd334f1920x1080.jpg", "https://mlpnk72yciwc.i.optimole.com/cqhiHLc.IIZS~2ef73/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2024/09/Crimson-Desert-Profile-Art.jpg"],
   description: "An open-world action RPG with intense combat and storytelling.",
   price: "$59.99",
+  discount: 0,
   releaseDate: "2025",
   developer: "Pearl Abyss",
   publisher: "Pearl Abyss",
@@ -470,6 +483,7 @@ const games = [
   screenshots: ["https://wallpaper-house.com/data/out/10/wallpaper2you_405976.jpg", "https://tse2.mm.bing.net/th/id/OIP.agOu1nTsJO-QGMehwRGlswHaEK?rs=1&pid=ImgDetMain&o=7&rm=3", "https://wallpapercave.com/wp/wp1879170.jpg", "https://static1.srcdn.com/wordpress/wp-content/uploads/Just-Cause-3-Review.jpg", "https://www.10wallpaper.com/wallpaper/1280x960/1605/Just_cause_3_sky_fortress-Game_Posters_HD_Wallpaper_1280x960.jpg"],
   description: "An explosive open-world game focused on chaos and destruction.",
   price: "$19.99",
+  discount: 10,
   releaseDate: "December 1, 2015",
   developer: "Avalanche Studios",
   publisher: "Square Enix",
@@ -503,6 +517,7 @@ const games = [
   screenshots: ["https://sm.ign.com/t/ign_nl/video/b/borderland/borderlands-4-vault-boss-gameplay-on-rtx-5090-4k-max-setting_8kfp.1200.jpg", "https://www.playstationlifestyle.net/wp-content/uploads/sites/9/2020/10/borderlands-3.jpg", "https://assets.2k.com/1a6ngf98576c/5N9yywP5Gb9eZRJqVrlED3/1aa7b99ba23184aca8b1fa96618acfb7/BL4_Vault-Hunters.jpg", "https://static0.hardcoregamerimages.com/wordpress/wp-content/uploads/2025/09/borderlands-4-boss-fight.jpg?q=49&fit=crop&w=825&dpr=2", "https://i.ytimg.com/vi/hAy6EPRaQlI/maxresdefault.jpg"],
   description: "A chaotic looter-shooter with humor and co-op gameplay.",
   price: "$69.99",
+  discount: 60,
   releaseDate: "2025",
   developer: "Gearbox Software",
   publisher: "2K Games",
@@ -536,6 +551,7 @@ const games = [
   screenshots: ["https://th.bing.com/th/id/R.a8a3fa2c3c5a070b5db54caaac3039b5?rik=cxQyA4jmsyim1w&riu=http%3a%2f%2fsm.pcmag.com%2fpcmag_me%2fphoto%2fdefault%2fdetroit-become-humantm-20180524191633_k55c.jpg&ehk=mplNQIjjWjAn3%2bDg3c6Mbb9l3AtJwBw2JTZJOapOdpI%3d&risl=&pid=ImgRaw&r=0", "https://i.ytimg.com/vi/p19Mi7I8wlQ/maxresdefault.jpg", "https://tse3.mm.bing.net/th/id/OIP.oGEdHf9cv2OZef6JLEBQwgHaEE?rs=1&pid=ImgDetMain&o=7&rm=3", "https://tse2.mm.bing.net/th/id/OIP.GEKEmtrzBoS1rHReftQNkgHaEK?rs=1&pid=ImgDetMain&o=7&rm=3", "https://i.ytimg.com/vi/8Omo6sAED04/maxresdefault.jpg"],
   description: "A narrative-driven story about AI and human choices.",
   price: "$39.99",
+  discount: 0,
   releaseDate: "May 25, 2018",
   developer: "Quantic Dream",
   publisher: "Sony",
@@ -569,6 +585,7 @@ const games = [
   screenshots: ["https://tse4.mm.bing.net/th/id/OIP.QAO5bMFrQgpnacnEraVjVgHaEK?rs=1&pid=ImgDetMain&o=7&rm=3", "https://i.ytimg.com/vi/ppVdj8zmhVY/maxresdefault.jpg", "https://i.ytimg.com/vi/T9lmKNu4M1k/maxresdefault.jpg", "https://tse1.mm.bing.net/th/id/OIP.WCLf74UxZaHvbhywZic8kwHaEK?rs=1&pid=ImgDetMain&o=7&rm=3", "https://tse2.mm.bing.net/th/id/OIP.c4OzGDOAFK58q2Cf6QmldgHaEK?rs=1&pid=ImgDetMain&o=7&rm=3"],
   description: "A fun third-person shooter featuring plants vs zombies battles.",
   price: "$19.99",
+  discount: 20,
   releaseDate: "February 23, 2016",
   developer: "PopCap Games",
   publisher: "EA",
@@ -602,6 +619,7 @@ const games = [
   screenshots: ["https://th.bing.com/th/id/R.6c0553f58f98d2a1aace0e2c9845b34c?rik=DwRh1ab5vgtGZg&pid=ImgRaw&r=0", "https://th.bing.com/th/id/R.6226601875690a6cfccef2509c8c8bea?rik=6bv3lx1LVVMAQQ&pid=ImgRaw&r=0", "https://tse4.mm.bing.net/th/id/OIP.__r_2vlCRxyHxyKD3KF_AAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3", "https://tse4.mm.bing.net/th/id/OIP.JLTGKLCbjeurqPDdWs7RtgHaEK?rs=1&pid=ImgDetMain&o=7&rm=3", "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2019/10/Plants-vs-zombies-battle-for-neighborville-screen-1.jpg"],
   description: "A colorful multiplayer shooter with quirky characters.",
   price: "$29.99",
+  discount: 0,
   releaseDate: "October 18, 2019",
   developer: "PopCap Games",
   publisher: "EA",
@@ -635,6 +653,7 @@ const games = [
   screenshots: ["https://i.ytimg.com/vi/o-5dUQZhQwA/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgXyhOMA8=&rs=AOn4CLCrt-YXYtNPOPFxFoI2zqEHU-0PIw", "https://fs5.mojevideo.sk/imgfb/236055.jpg", "https://static.deltiasgaming.com/2025/01/days-gone.jpg", "https://tse4.mm.bing.net/th/id/OIP.yguSmQUJMKSVMr-_Sa--lwHaEK?rs=1&pid=ImgDetMain&o=7&rm=3", "https://tse3.mm.bing.net/th/id/OIP.pptv_BUFCPwSovZUGPlpHQHaEK?rs=1&pid=ImgDetMain&o=7&rm=3"],
   description: "An open-world survival game set in a post-apocalyptic world.",
   price: "$49.99",
+  discount: 0,
   releaseDate: "May 18, 2021",
   developer: "Bend Studio",
   publisher: "Sony",
@@ -668,6 +687,7 @@ const games = [
   screenshots: ["https://i.ytimg.com/vi/etwy_Jw5Cv8/maxresdefault.jpg", "https://th.bing.com/th/id/R.18c2b2b982e48a5312b5b6854df2ac33?rik=8FoKn8t0ujogBw&pid=ImgRaw&r=0", "https://tse4.mm.bing.net/th/id/OIP.SNIivUM9mlQBf-LJ2nEDoQHaEK?rs=1&pid=ImgDetMain&o=7&rm=3", "https://tse1.mm.bing.net/th/id/OIP.TNIsGvyHA49qdqfHDL90wwHaEK?rs=1&pid=ImgDetMain&o=7&rm=3", "https://tse4.mm.bing.net/th/id/OIP.gzbmijXZPM9olpN5RjlW7QHaEK?rs=1&pid=ImgDetMain&o=7&rm=3"],
   description: "A fast-paced roguelike platformer with challenging combat.",
   price: "$24.99",
+  discount: 0,
   releaseDate: "August 7, 2018",
   developer: "Motion Twin",
   publisher: "Motion Twin",
@@ -697,7 +717,15 @@ let selectedGame = games.find(g => g.id == selectedGameId);
 if (selectedGame) {
   document.getElementById("GameTitle").textContent = selectedGame.title;
   document.getElementById("GameDescription").textContent = selectedGame.description;
-  document.getElementById("GamePrice").textContent = selectedGame.price;
+  const pricing = getFinalPrice(selectedGame);
+
+document.getElementById("GamePrice").innerHTML = `
+  $${pricing.final}
+  ${pricing.discount > 0 ? `
+    <span class="old-price">$${pricing.original}</span>
+    <span class="discount-tag">-${pricing.discount}%</span>
+  ` : ""}
+`;
 
   document.querySelector(".G-media img").src = selectedGame.cover || selectedGame.image;
   document.getElementById("gameTrailer").src = selectedGame.trailer;
@@ -807,5 +835,18 @@ if (selectedGame && isOwned(selectedGame)) {
   buyBtn.onclick = function () {
     localStorage.setItem("selectedGame", JSON.stringify(selectedGame));
     window.location.href = "Payment.html";
+  };
+}
+
+function getFinalPrice(game) {
+  let price = parseFloat(game.price.replace("$", ""));
+  let discount = game.discount || 0;
+
+  let finalPrice = price - (price * discount) / 100;
+
+  return {
+    original: price.toFixed(2),
+    final: finalPrice.toFixed(2),
+    discount: discount
   };
 }

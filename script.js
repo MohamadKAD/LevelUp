@@ -315,7 +315,6 @@ searchInput.addEventListener("input", () => {
   });
 });
 
-
 if (isOwned(selectedGame)) {
   document.getElementById("but-btn").textContent = "Owned";
   document.getElementById("but-btn").disabled = true;
