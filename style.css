@@ -472,6 +472,12 @@ select {
   align-items: start;
 }
 
+.library-details-media {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
 .library-details-image,
 .library-details-placeholder {
   width: 100%;
@@ -548,6 +554,10 @@ select {
 
 .library-favorite-btn {
   width: fit-content;
+}
+
+.library-page-btn {
+  width: 100%;
 }
 
 .library-details-empty,

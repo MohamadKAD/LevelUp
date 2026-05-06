@@ -54,7 +54,12 @@ function renderDetails(game) {
 
   details.innerHTML = `
     <div class="library-details-card">
-      ${imageMarkup}
+      <div class="library-details-media">
+        ${imageMarkup}
+        <button type="button" class="profileBtn library-page-btn" id="openGamePageBtn">
+          Open Game Page
+        </button>
+      </div>
       <div class="library-details-copy">
         <span class="library-details-label">Owned Game</span>
         <h2>${game.title}</h2>
@@ -74,6 +79,11 @@ function renderDetails(game) {
 
   document.getElementById("favoriteToggleBtn").addEventListener("click", () => {
     toggleFavoriteByTitle(game.title);
+  });
+
+  document.getElementById("openGamePageBtn").addEventListener("click", () => {
+    localStorage.setItem("selectedGameId", game.id);
+    window.location.href = "game.html";
   });
 
   document.getElementById("gameReviewInput").addEventListener("input", (event) => {
@@ -132,8 +142,9 @@ function renderGames() {
     `;
 
     item.addEventListener("click", () => {
+      selectedGameTitle = game.title;
       localStorage.setItem("selectedGameId", game.id);
-      window.location.href = "game.html";
+      renderGames();
     });
 
     container.appendChild(item);
